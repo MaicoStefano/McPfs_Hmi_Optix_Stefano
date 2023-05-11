@@ -1,0 +1,66 @@
+Name: LogBook
+Type: FolderType
+Children:
+- Name: LogBookON
+  Id: g=7c7e79714cbf00597d3f62efccef205e
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Operatore
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: Stampo
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/DriverS7TIAPROFINET1/StazioneS7TIAPROFINET1/Tags/CPU_Pressa/HMI/DbHmi/Produzione/StampoNome"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: NomeVariabile
+  Id: g=cb800c830e339318bb6bb1197302440d
+  Type: BaseDataVariableType
+  DataType: String
+  Value: ""
+- Name: ValoreVariabile
+  Id: g=3ce5da5808a3a56bcde53890d42507c3
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: QueryLogBook
+  Id: g=76e3268899a452100c5a1fcd3cf72be2
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "SELECT * FROM \"LogBook\""
+- Name: SelectDataOra
+  Id: g=9fc2710b90947f21454b29a5d338c43e
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: SelectOperatore
+  Id: g=05e618530c5a3ed04284fc3d4200e8b7
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: SelectStampo
+  Id: g=45d02c74ff5f41ff7868931ab067336e
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: SelectKeyName
+  Id: g=9dcee025306b630feae7f68165ba1d8c
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: SelectValore
+  Id: g=512e1195d24b5387f339fc70f5bfe3ad
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"

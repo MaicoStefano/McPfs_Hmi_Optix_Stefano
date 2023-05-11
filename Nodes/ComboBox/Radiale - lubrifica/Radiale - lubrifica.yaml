@@ -1,0 +1,20 @@
+Name: 'Radiale - lubrifica'
+Id: g=6677a6ad7a24d255cbf2725e7205786d
+Type: FolderType
+Children:
+- Name: Piano mobile
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+- Name: Piano fisso
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 1
+- Name: Start vert.
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 2
+- Name: Inserire
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 4

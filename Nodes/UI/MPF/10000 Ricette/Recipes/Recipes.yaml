@@ -1,0 +1,8 @@
+Name: Recipes
+Type: FolderType
+Children:
+- File: Recipe_Stampo/Recipe_Stampo.yaml
+- File: Recipe_SetUp/Recipe_SetUp.yaml
+- File: Recipe_Sistema/Recipe_Sistema.yaml
+- File: Recipe_Livelli/Recipe_Livelli.yaml
+- File: Recipe_Nomi/Recipe_Nomi.yaml

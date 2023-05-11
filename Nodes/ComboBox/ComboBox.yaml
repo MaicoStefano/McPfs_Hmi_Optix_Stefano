@@ -1,0 +1,9 @@
+Name: ComboBox
+Type: FolderType
+Children:
+- File: Livelli password/Livelli password.yaml
+- File: Livelli Maico/Livelli Maico.yaml
+- File: Squeeze radiali/Squeeze radiali.yaml
+- File: 'Radiale - ciclo/Radiale - ciclo.yaml'
+- File: 'Radiale - sicurezza/Radiale - sicurezza.yaml'
+- File: 'Radiale - lubrifica/Radiale - lubrifica.yaml'

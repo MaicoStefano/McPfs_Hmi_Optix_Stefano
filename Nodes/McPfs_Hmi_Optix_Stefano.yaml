@@ -1,0 +1,241 @@
+Name: McPfs_Hmi_Optix_Stefano
+Type: ProjectFolder
+Children:
+- Name: BranchingEnabled
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Locales
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["it-IT","en-US","fr-FR","hu-HU","sv-SE","bg-BG","pl-PL","ro-RO","pt-BR","ru-RU","sl-SI"]
+- Name: LocaleFallbackList
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US"]
+- File: UI/UI.yaml
+- File: Modelli Maico/Modelli Maico.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- File: Users/Users.yaml
+- Name: PasswordPolicy
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: EnforcePasswordHistory
+    Type: PropertyType
+    DataType: Byte
+    Value: 0
+  - Name: MinimumPasswordAge
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: MinimumPasswordLength
+    Type: PropertyType
+    DataType: Byte
+    Value: 0
+- File: BaseControls/BaseControls.yaml
+- File: Fermi/Fermi.yaml
+- Name: Ricetta livelli
+  Type: Alias
+  DataType: NodeId
+  Value: {"IdType":2,"Id":"a772f592cf7e5906ca8a60d26c734411","Namespace":28}
+  Children:
+  - Name: Kind
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"d3bebd87745ea0e4dccad7894fe4558a","Namespace":28}
+- Name: EventoCaricatoDelProgettoHandler1
+  Type: EventHandler
+  Children:
+  - Name: ListenEventType
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"Id":18,"Namespace":7}
+  - Name: MethodsToCall
+    Type: BaseObjectType
+    Children:
+    - Name: MethodContainer1
+      Type: BaseObjectType
+      Children:
+      - Name: ns=3;ObjectPointer
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":58}
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../Recipes/RecipeController@NodeId"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            Value: 2
+      - Name: ns=3;Method
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "SelectFromDB"
+      - Name: InputArguments
+        Type: BaseObjectType
+        Children:
+        - Name: RecipeName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Livelli"
+        - Name: ErrorPolicy
+          Type: BaseDataVariableType
+          DataType: CopyErrorPolicy
+          Value: 0
+    - Name: MethodContainer2
+      Type: BaseObjectType
+      Children:
+      - Name: ns=3;ObjectPointer
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":58}
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../Recipes/RecipeController@NodeId"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            Value: 2
+      - Name: ns=3;Method
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ApplyFromDB"
+      - Name: InputArguments
+        Type: BaseObjectType
+        Children:
+        - Name: RecipeName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Livelli"
+        - Name: ErrorPolicy
+          Type: BaseDataVariableType
+          DataType: CopyErrorPolicy
+          Value: 0
+  - Name: EventArguments
+    Type: ProjectLoadedEvent
+    Children:
+    - Name: Project
+      Type: BaseVariableType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: EventId
+      Type: PropertyType
+      DataType: ByteString
+      Value: ""
+    - Name: EventType
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: SourceNode
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: SourceName
+      Type: PropertyType
+      DataType: String
+      Value: ""
+    - Name: Time
+      Type: PropertyType
+      DataType: UtcTime
+      Value: "1601-01-01T00:00:00.0000000"
+    - Name: ReceiveTime
+      Type: PropertyType
+      DataType: UtcTime
+      Value: "1601-01-01T00:00:00.0000000"
+    - Name: Message
+      Type: PropertyType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Severity
+      Type: PropertyType
+      DataType: UInt16
+      Value: 0
+- File: Livelli/Livelli.yaml
+- File: LogBook/LogBook.yaml
+- File: ComboBox/ComboBox.yaml
+- Name: RecipeSchema1
+  Type: Alias
+  DataType: NodeId
+  Value: {"IdType":0,"Id":0,"Namespace":-1}
+  Children:
+  - Name: Kind
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+- Name: RecipeSchema2
+  Type: Alias
+  DataType: NodeId
+  Value: {"IdType":0,"Id":0,"Namespace":-1}
+  Children:
+  - Name: Kind
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+- Name: RecipeSchema3
+  Type: Alias
+  DataType: NodeId
+  Value: {"IdType":0,"Id":0,"Namespace":-1}
+  Children:
+  - Name: Kind
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+- Name: RecipeSchema4
+  Type: Alias
+  DataType: NodeId
+  Value: {"IdType":0,"Id":0,"Namespace":-1}
+  Children:
+  - Name: Kind
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+- Name: RecipeSchema5
+  Type: Alias
+  DataType: NodeId
+  Value: {"IdType":0,"Id":0,"Namespace":-1}
+  Children:
+  - Name: Kind
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+- Name: DefaultUserFolder
+  Type: NodePointer
+  DataType: NodeId
+  Value: {"IdType":2,"Id":"525042744e0e756ed2d4880c65b96c2c","Namespace":28}
+  Children:
+  - Name: Kind
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"Id":61}

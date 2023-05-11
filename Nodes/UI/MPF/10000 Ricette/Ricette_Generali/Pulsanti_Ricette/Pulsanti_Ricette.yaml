@@ -1,0 +1,7 @@
+Name: Pulsanti_Ricette
+Type: FolderType
+Children:
+- File: RicetteSetup/RicetteSetup.yaml
+- File: RicetteSistema/RicetteSistema.yaml
+- File: RicetteNomi/RicetteNomi.yaml
+- File: RicetteLivelli/RicetteLivelli.yaml

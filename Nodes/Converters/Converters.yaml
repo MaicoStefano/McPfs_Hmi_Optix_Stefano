@@ -1,0 +1,40 @@
+Name: Converters
+Type: FolderType
+Children:
+- Name: PuntatoreVariabiliLivello
+  Id: g=ec5f6a6d8ed07fd952e6f973a7c3c25c
+  Supertype: ValueMapConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Pairs
+    Type: BaseObjectType
+    ModellingRule: None
+    Children:
+    - Name: Pair
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "Avanti_Vel1"
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: VariablePointer
+        ModellingRule: None
+        Value: {"IdType":2,"Id":"8b423e6fccc984c4c321a2a3cc811236","Namespace":28}
+    - Name: Pair1
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "Avanti_Vel2"
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: VariablePointer
+        ModellingRule: None
+        Value: {"IdType":2,"Id":"0e10a82c4993729254b446b396caa0bf","Namespace":28}

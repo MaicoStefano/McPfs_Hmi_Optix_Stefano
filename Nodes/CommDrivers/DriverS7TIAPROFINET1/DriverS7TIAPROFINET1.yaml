@@ -1,0 +1,4 @@
+Name: DriverS7TIAPROFINET1
+Type: S7TiaProfinetDriver
+Children:
+- File: StazioneS7TIAPROFINET1/StazioneS7TIAPROFINET1.yaml

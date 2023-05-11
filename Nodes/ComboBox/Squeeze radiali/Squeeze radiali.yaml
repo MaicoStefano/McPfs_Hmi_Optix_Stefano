@@ -1,0 +1,40 @@
+Name: Squeeze radiali
+Id: g=f1a6a3f895534718b879e92e0e0b5750
+Type: FolderType
+Children:
+- Name: No
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+- Name: Rad.1
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 1
+- Name: Rad.2
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 2
+- Name: Rad.3
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 3
+- Name: Rad.4
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 4
+- Name: Rad.5
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 5
+- Name: Rad.6
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 6
+- Name: Rad.7
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 7
+- Name: Rad.8
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 8

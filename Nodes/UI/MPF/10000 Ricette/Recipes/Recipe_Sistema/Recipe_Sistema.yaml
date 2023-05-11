@@ -1,0 +1,2805 @@
+Name: Recipe_Sistema
+Type: FolderType
+Children:
+- Name: RecipeSchema3
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Type: BaseObjectType
+    Children:
+    - Name: CPU_Pressa
+      Type: BaseObjectType
+      Children:
+      - Name: HMI
+        Type: BaseObjectType
+        Children:
+        - Name: DbSistema
+          Type: BaseObjectType
+          Children:
+          - Name: PianoMobile
+            Type: BaseObjectType
+            Children:
+            - Name: SalvastampiCamp_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: PrimaChLenta_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: ChiusuraFinaleLimite_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MontaggioStampiLimiteEle_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MontaggioStampiLimiteIdr_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MontaggioStampiLimite_Coppia
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MontaggioStampiLimite_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: RampaChiusuraEle_Inc
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: ChiusuraForzaMax
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: ForzaMinima
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SequenzaOff_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: ForzaStep
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SequenzaRitardoEntrata_Quota
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: ChLentaFerma_Time
+              Type: BaseDataVariableType
+              DataType: Duration
+              Value: "0:00:00:0.0000000"
+            - Name: ChLenta_TimeOut
+              Type: BaseDataVariableType
+              DataType: Duration
+              Value: "0:00:00:0.0000000"
+            - Name: AzionamentoTempAcquaStart
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: AzionamentoTempAllarme
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: AzionamentoTempIsteresi
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: ChiocciolaTempAcquaStart
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: ChiocciolaTempAllarme
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: ChiocciolaTempIsteresi
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MotoreTempAcquaStart
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MotoreTempAllarme
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MotoreTempIsteresi
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: LubChiocciolaScambi_Nr
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SpostatoriVeloce_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SpostatoriLento_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SpostatoriVeloce_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SpostatoriLento_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: LubChiocciola_TimeOut
+              Type: BaseDataVariableType
+              DataType: Duration
+              Value: "0:00:00:0.0000000"
+            - Name: CHApeLimite_CoppiaPre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+          - Name: Iniezione
+            Type: BaseObjectType
+            Children:
+            - Name: Beckhoff
+              Type: BaseObjectType
+              Children:
+              - Name: Kp1
+                Type: BaseDataVariableType
+                DataType: UInt16
+                Value: 0
+              - Name: Kp2
+                Type: BaseDataVariableType
+                DataType: UInt16
+                Value: 0
+              - Name: Kp3
+                Type: BaseDataVariableType
+                DataType: UInt16
+                Value: 0
+              - Name: Ki1
+                Type: BaseDataVariableType
+                DataType: UInt16
+                Value: 0
+              - Name: Ki2
+                Type: BaseDataVariableType
+                DataType: UInt16
+                Value: 0
+              - Name: Ki3
+                Type: BaseDataVariableType
+                DataType: UInt16
+                Value: 0
+              - Name: AnticipoStart_Acc
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: AnticipoStop_Acc
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: AnticipoStart_Dec
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: AnticipoStop_Dec
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: AccStart_Pre
+                Type: BaseDataVariableType
+                DataType: UInt16
+                Value: 0
+              - Name: Taratura_Vel
+                Type: BaseDataVariableType
+                DataType: Float
+                ValueRank: OneDimension
+                ArrayDimensions: [32]
+                Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+              - Name: RampaIniziale
+                Type: BaseDataVariableType
+                DataType: UInt32
+                Value: 0
+              - Name: Taratura_Mv
+                Type: BaseDataVariableType
+                DataType: Float
+                ValueRank: OneDimension
+                ArrayDimensions: [32]
+                Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+              - Name: MacchinaAperta_Mv
+                Type: BaseDataVariableType
+                DataType: UInt16
+                Value: 0
+              - Name: RitardoCampiona1aFase
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+            - Name: Autoregolazione
+              Type: BaseObjectType
+              Children:
+              - Name: Enable
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+              - Name: IncrementiIniziali
+                Type: BaseDataVariableType
+                DataType: Float
+                Value: 0.0
+              - Name: IncrementoAutoregolazione
+                Type: BaseDataVariableType
+                DataType: Float
+                Value: 0.0
+              - Name: AutoregolazioneMaxPos
+                Type: BaseDataVariableType
+                DataType: Float
+                Value: 0.0
+              - Name: AutoregolazioneMaxNeg
+                Type: BaseDataVariableType
+                DataType: Float
+                Value: 0.0
+              - Name: CicliInizialiSet
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: CicliCampionamentoSet
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: Velocita2aToll
+                Type: BaseDataVariableType
+                DataType: Float
+                Value: 0.0
+            - Name: Acc
+              Type: BaseObjectType
+              Children:
+              - Name: SecondaMotorePosMax
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: SecondaIsteresi
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: MoltiplicaIsteresi
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: SecondaPompeOffMax_Pre
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: SecondaPompeOffMin_Pre
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: MoltiplicaPompeOffMax_Pre
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: MoltiplicaPompeOffMin_Pre
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: Start_Rit
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+              - Name: SecondaMotorePosMin
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: MoltiplicaMotorePosMax
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: MoltiplicaMotorePosMin
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+            - Name: StopMontaggioStampi
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: Ridotte_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: AnelloAperto_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: MoltiplicaAllarmeStopImmediato
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: EspulsioneAnticipoStop_Quota
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: PrimadiEspulsione_Mv
+              Type: BaseDataVariableType
+              DataType: Float
+              Value: 0.0
+            - Name: FolleStart_Time
+              Type: BaseDataVariableType
+              DataType: Duration
+              Value: "0:00:00:0.0000000"
+            - Name: AnelloApertoSeconda_Anticipo
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: RidotteAlta_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: VuotoScarto_en
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+          - Name: Estrazione
+            Type: BaseObjectType
+            Children:
+            - Name: EcSequenza_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+          - Name: Pompa
+            Type: BaseObjectType
+            Children:
+            - Name: Riscaldo
+              Type: BaseObjectType
+              Children:
+              - Name: Programmi
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ValueRank: OneDimension
+                ArrayDimensions: [7]
+                Value: [false,false,false,false,false,false,false]
+              - Name: Testo
+                Type: BaseDataVariableType
+                DataType: String
+                ValueRank: OneDimension
+                ArrayDimensions: [7]
+                Value: ["","","","","","",""]
+              - Name: OreSet
+                Type: BaseDataVariableType
+                DataType: Int32
+                ValueRank: OneDimension
+                ArrayDimensions: [7]
+                Value: [0,0,0,0,0,0,0]
+              - Name: MinSet
+                Type: BaseDataVariableType
+                DataType: Int32
+                ValueRank: OneDimension
+                ArrayDimensions: [7]
+                Value: [0,0,0,0,0,0,0]
+              - Name: Toll+
+                Type: BaseDataVariableType
+                DataType: Int32
+                ValueRank: OneDimension
+                ArrayDimensions: [7]
+                Value: [0,0,0,0,0,0,0]
+              - Name: Evento Giorno
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ValueRank: OneDimension
+                ArrayDimensions: [7]
+                Value: [false,false,false,false,false,false,false]
+              - Name: InterruttoriAbilitazione
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ValueRank: OneDimension
+                ArrayDimensions: [7]
+                Value: [false,false,false,false,false,false,false]
+              - Name: Ventola_En
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+            - Name: Lubrifica
+              Type: BaseObjectType
+              Children:
+              - Name: Spostatori_En
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+              - Name: TestaCroceSotto_En
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+              - Name: TestaCroceSopra_En
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+              - Name: BielleSotto_En
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+              - Name: BielleSopra_En
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+              - Name: PmSotto_En
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+              - Name: PmSopra_En
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+              - Name: Iniezione_En
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+              - Name: Spostatori_Cicli
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: TestaCroceSotto_Cicli
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: TestaCroceSopra_Cicli
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: BielleSotto_Cicli
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: BielleSopra_Cicli
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: PmSotto_Cicli
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: PmSopra_Cicli
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: Iniezione_Cicli
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: Spostatori_TimeOut
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+              - Name: TestaCroceSotto_TimeOut
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+              - Name: TestaCroceSopra_TimeOut
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+              - Name: BielleSotto_TimeOut
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+              - Name: BielleSopra_TimeOut
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+              - Name: PmSotto_TimeOut
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+              - Name: PmSopra_TimeOut
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+              - Name: Iniezione_TimeOut
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+              - Name: TimeOutNoSettori
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+              - Name: IntervalloNoSettori_Nr
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: Decompressione
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+            - Name: Ventola_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: VentolaIsteresi
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: OlioRiscaldamento_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: OlioRiscaldamento_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: OlioLivelloPreallarme
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: Iniezione_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: Iniezione_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: OlioTempIsteresi
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: Mantenimento_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: Mantenimento_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: OlioTempRaff_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: OlioLivelloInter_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: PressaRiposo_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: AltaPressione_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MontaggioStampi_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: PressaRiposo_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MontaggioStampi_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: Accessori_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: AltaPressione_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: Accessori_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: AccAuxIsteresi_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: NoMovimenti_TimeOut
+              Type: BaseDataVariableType
+              DataType: Duration
+              Value: "0:00:00:0.0000000"
+            - Name: OlioTempPreAllarme
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: OlioTempMax
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: OlioTempMin
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: OlioTempAcquaStart
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: OlioTempVentolaStart
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: TollLivAll
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: TemperaturaAllarme
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+          - Name: Cancelli
+            Type: BaseObjectType
+            Children:
+            - Name: ApertoMontaggioStampi_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: RichiusuraAutomatica_Rit
+              Type: BaseDataVariableType
+              DataType: Duration
+              Value: "0:00:00:0.0000000"
+            - Name: RichiusuraPerCollaudo_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: AntApertura_Vel
+              Type: BaseDataVariableType
+              DataType: UInt16
+              Value: 0
+            - Name: AntChiusura_Vel
+              Type: BaseDataVariableType
+              DataType: UInt16
+              Value: 0
+            - Name: AntAperturaTot_Quota
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: AntApertura_Quota
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: PostApertura_Vel
+              Type: BaseDataVariableType
+              DataType: UInt16
+              Value: 0
+            - Name: PostChiusura_Vel
+              Type: BaseDataVariableType
+              DataType: UInt16
+              Value: 0
+            - Name: PostApertura_Quota
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: PostAperturaTot_Quota
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+          - Name: Caricatore
+            Type: BaseObjectType
+            Children:
+            - Name: SincronizzazioneCmdPressa_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: LingottoAllarme_Time
+              Type: BaseDataVariableType
+              DataType: Duration
+              Value: "0:00:00:0.0000000"
+          - Name: Lubrificatore
+            Type: BaseObjectType
+            Children:
+            - Name: PendenteOn
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: PreEntrataInApertura_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: RadialiMultipli_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+          - Name: Asportatore
+            Type: BaseObjectType
+            Children:
+            - Name: FtcGestiteDaPressa_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: InsertiCaricoInizioCiclo_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: StopCicloPezzoMancante_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+          - Name: Produzione
+            Type: BaseObjectType
+            Children:
+            - Name: StopFine_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: FermoRiconosci
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+          - Name: Trasduttori
+            Type: BaseObjectType
+            Children:
+            - Name: SqueezeA
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SqueezeB
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SqueezeC
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SqueezeD
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SqueezeE
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SqueezeF
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SqueezeG
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SqueezeH
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: Pompa
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: AusiliarioOlio
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: AusiliarioAzoto
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: OlioTemp
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: Spostatori
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: ChiusuraCorsa
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: ChiusuraForza
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: ChiusuraEncoder
+              Type: BaseDataVariableType
+              DataType: Float
+              Value: 0.0
+            - Name: Motore2a
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MoltiplicaAzoto
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MoltiplicaOlio
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SecondaOlio
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SecondaAzoto
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MotoreMoltiplica
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: Estrazione
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: CancelloPost
+              Type: BaseDataVariableType
+              DataType: Int32
+              Value: 0
+            - Name: CancelloAnt
+              Type: BaseDataVariableType
+              DataType: Int32
+              Value: 0
+  - Class: Reference
+    Target: ns=13;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=60
+    Direction: Forward
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"29804592e3fb7a7c0a8d3f4529cc7462","Namespace":28}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":19}
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"02e1dfbdfbf7bcdd6c12b7720b98ace6","Namespace":28}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: Timeout
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:30.0000000"
+  - Name: EditModel
+    Type: BaseObjectType
+    Children:
+    - Name: CPU_Pressa
+      Type: BaseObjectType
+      Children:
+      - Name: HMI
+        Type: BaseObjectType
+        Children:
+        - Name: DbSistema
+          Type: BaseObjectType
+          Children:
+          - Name: PianoMobile
+            Type: BaseObjectType
+            Children:
+            - Name: SalvastampiCamp_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: PrimaChLenta_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: ChiusuraFinaleLimite_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MontaggioStampiLimiteEle_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MontaggioStampiLimiteIdr_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MontaggioStampiLimite_Coppia
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MontaggioStampiLimite_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: RampaChiusuraEle_Inc
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: ChiusuraForzaMax
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: ForzaMinima
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SequenzaOff_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: ForzaStep
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SequenzaRitardoEntrata_Quota
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: ChLentaFerma_Time
+              Type: BaseDataVariableType
+              DataType: Duration
+              Value: "0:00:00:0.0000000"
+            - Name: ChLenta_TimeOut
+              Type: BaseDataVariableType
+              DataType: Duration
+              Value: "0:00:00:0.0000000"
+            - Name: AzionamentoTempAcquaStart
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: AzionamentoTempAllarme
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: AzionamentoTempIsteresi
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: ChiocciolaTempAcquaStart
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: ChiocciolaTempAllarme
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: ChiocciolaTempIsteresi
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MotoreTempAcquaStart
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MotoreTempAllarme
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MotoreTempIsteresi
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: LubChiocciolaScambi_Nr
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SpostatoriVeloce_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SpostatoriLento_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SpostatoriVeloce_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SpostatoriLento_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: LubChiocciola_TimeOut
+              Type: BaseDataVariableType
+              DataType: Duration
+              Value: "0:00:00:0.0000000"
+            - Name: CHApeLimite_CoppiaPre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+          - Name: Iniezione
+            Type: BaseObjectType
+            Children:
+            - Name: Beckhoff
+              Type: BaseObjectType
+              Children:
+              - Name: Kp1
+                Type: BaseDataVariableType
+                DataType: UInt16
+                Value: 0
+              - Name: Kp2
+                Type: BaseDataVariableType
+                DataType: UInt16
+                Value: 0
+              - Name: Kp3
+                Type: BaseDataVariableType
+                DataType: UInt16
+                Value: 0
+              - Name: Ki1
+                Type: BaseDataVariableType
+                DataType: UInt16
+                Value: 0
+              - Name: Ki2
+                Type: BaseDataVariableType
+                DataType: UInt16
+                Value: 0
+              - Name: Ki3
+                Type: BaseDataVariableType
+                DataType: UInt16
+                Value: 0
+              - Name: AnticipoStart_Acc
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: AnticipoStop_Acc
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: AnticipoStart_Dec
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: AnticipoStop_Dec
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: AccStart_Pre
+                Type: BaseDataVariableType
+                DataType: UInt16
+                Value: 0
+              - Name: Taratura_Vel
+                Type: BaseDataVariableType
+                DataType: Float
+                ValueRank: OneDimension
+                ArrayDimensions: [32]
+                Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+              - Name: RampaIniziale
+                Type: BaseDataVariableType
+                DataType: UInt32
+                Value: 0
+              - Name: Taratura_Mv
+                Type: BaseDataVariableType
+                DataType: Float
+                ValueRank: OneDimension
+                ArrayDimensions: [32]
+                Value: [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+              - Name: MacchinaAperta_Mv
+                Type: BaseDataVariableType
+                DataType: UInt16
+                Value: 0
+              - Name: RitardoCampiona1aFase
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+            - Name: Autoregolazione
+              Type: BaseObjectType
+              Children:
+              - Name: Enable
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+              - Name: IncrementiIniziali
+                Type: BaseDataVariableType
+                DataType: Float
+                Value: 0.0
+              - Name: IncrementoAutoregolazione
+                Type: BaseDataVariableType
+                DataType: Float
+                Value: 0.0
+              - Name: AutoregolazioneMaxPos
+                Type: BaseDataVariableType
+                DataType: Float
+                Value: 0.0
+              - Name: AutoregolazioneMaxNeg
+                Type: BaseDataVariableType
+                DataType: Float
+                Value: 0.0
+              - Name: CicliInizialiSet
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: CicliCampionamentoSet
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: Velocita2aToll
+                Type: BaseDataVariableType
+                DataType: Float
+                Value: 0.0
+            - Name: Acc
+              Type: BaseObjectType
+              Children:
+              - Name: SecondaMotorePosMax
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: SecondaIsteresi
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: MoltiplicaIsteresi
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: SecondaPompeOffMax_Pre
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: SecondaPompeOffMin_Pre
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: MoltiplicaPompeOffMax_Pre
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: MoltiplicaPompeOffMin_Pre
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: Start_Rit
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+              - Name: SecondaMotorePosMin
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: MoltiplicaMotorePosMax
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: MoltiplicaMotorePosMin
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+            - Name: StopMontaggioStampi
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: Ridotte_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: AnelloAperto_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: MoltiplicaAllarmeStopImmediato
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: EspulsioneAnticipoStop_Quota
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: PrimadiEspulsione_Mv
+              Type: BaseDataVariableType
+              DataType: Float
+              Value: 0.0
+            - Name: FolleStart_Time
+              Type: BaseDataVariableType
+              DataType: Duration
+              Value: "0:00:00:0.0000000"
+            - Name: AnelloApertoSeconda_Anticipo
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: RidotteAlta_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: VuotoScarto_en
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+          - Name: Estrazione
+            Type: BaseObjectType
+            Children:
+            - Name: EcSequenza_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+          - Name: Pompa
+            Type: BaseObjectType
+            Children:
+            - Name: Riscaldo
+              Type: BaseObjectType
+              Children:
+              - Name: Programmi
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ValueRank: OneDimension
+                ArrayDimensions: [7]
+                Value: [false,false,false,false,false,false,false]
+              - Name: Testo
+                Type: BaseDataVariableType
+                DataType: String
+                ValueRank: OneDimension
+                ArrayDimensions: [7]
+                Value: ["","","","","","",""]
+              - Name: OreSet
+                Type: BaseDataVariableType
+                DataType: Int32
+                ValueRank: OneDimension
+                ArrayDimensions: [7]
+                Value: [0,0,0,0,0,0,0]
+              - Name: MinSet
+                Type: BaseDataVariableType
+                DataType: Int32
+                ValueRank: OneDimension
+                ArrayDimensions: [7]
+                Value: [0,0,0,0,0,0,0]
+              - Name: Toll+
+                Type: BaseDataVariableType
+                DataType: Int32
+                ValueRank: OneDimension
+                ArrayDimensions: [7]
+                Value: [0,0,0,0,0,0,0]
+              - Name: Evento Giorno
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ValueRank: OneDimension
+                ArrayDimensions: [7]
+                Value: [false,false,false,false,false,false,false]
+              - Name: InterruttoriAbilitazione
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ValueRank: OneDimension
+                ArrayDimensions: [7]
+                Value: [false,false,false,false,false,false,false]
+              - Name: Ventola_En
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+            - Name: Lubrifica
+              Type: BaseObjectType
+              Children:
+              - Name: Spostatori_En
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+              - Name: TestaCroceSotto_En
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+              - Name: TestaCroceSopra_En
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+              - Name: BielleSotto_En
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+              - Name: BielleSopra_En
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+              - Name: PmSotto_En
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+              - Name: PmSopra_En
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+              - Name: Iniezione_En
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+              - Name: Spostatori_Cicli
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: TestaCroceSotto_Cicli
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: TestaCroceSopra_Cicli
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: BielleSotto_Cicli
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: BielleSopra_Cicli
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: PmSotto_Cicli
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: PmSopra_Cicli
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: Iniezione_Cicli
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: Spostatori_TimeOut
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+              - Name: TestaCroceSotto_TimeOut
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+              - Name: TestaCroceSopra_TimeOut
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+              - Name: BielleSotto_TimeOut
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+              - Name: BielleSopra_TimeOut
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+              - Name: PmSotto_TimeOut
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+              - Name: PmSopra_TimeOut
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+              - Name: Iniezione_TimeOut
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+              - Name: TimeOutNoSettori
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+              - Name: IntervalloNoSettori_Nr
+                Type: BaseDataVariableType
+                DataType: Int16
+                Value: 0
+              - Name: Decompressione
+                Type: BaseDataVariableType
+                DataType: Duration
+                Value: "0:00:00:0.0000000"
+            - Name: Ventola_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: VentolaIsteresi
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: OlioRiscaldamento_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: OlioRiscaldamento_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: OlioLivelloPreallarme
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: Iniezione_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: Iniezione_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: OlioTempIsteresi
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: Mantenimento_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: Mantenimento_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: OlioTempRaff_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: OlioLivelloInter_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: PressaRiposo_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: AltaPressione_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MontaggioStampi_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: PressaRiposo_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MontaggioStampi_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: Accessori_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: AltaPressione_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: Accessori_Vel
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: AccAuxIsteresi_Pre
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: NoMovimenti_TimeOut
+              Type: BaseDataVariableType
+              DataType: Duration
+              Value: "0:00:00:0.0000000"
+            - Name: OlioTempPreAllarme
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: OlioTempMax
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: OlioTempMin
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: OlioTempAcquaStart
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: OlioTempVentolaStart
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: TollLivAll
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: TemperaturaAllarme
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+          - Name: Cancelli
+            Type: BaseObjectType
+            Children:
+            - Name: ApertoMontaggioStampi_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: RichiusuraAutomatica_Rit
+              Type: BaseDataVariableType
+              DataType: Duration
+              Value: "0:00:00:0.0000000"
+            - Name: RichiusuraPerCollaudo_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: AntApertura_Vel
+              Type: BaseDataVariableType
+              DataType: UInt16
+              Value: 0
+            - Name: AntChiusura_Vel
+              Type: BaseDataVariableType
+              DataType: UInt16
+              Value: 0
+            - Name: AntAperturaTot_Quota
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: AntApertura_Quota
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: PostApertura_Vel
+              Type: BaseDataVariableType
+              DataType: UInt16
+              Value: 0
+            - Name: PostChiusura_Vel
+              Type: BaseDataVariableType
+              DataType: UInt16
+              Value: 0
+            - Name: PostApertura_Quota
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: PostAperturaTot_Quota
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+          - Name: Caricatore
+            Type: BaseObjectType
+            Children:
+            - Name: SincronizzazioneCmdPressa_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: LingottoAllarme_Time
+              Type: BaseDataVariableType
+              DataType: Duration
+              Value: "0:00:00:0.0000000"
+          - Name: Lubrificatore
+            Type: BaseObjectType
+            Children:
+            - Name: PendenteOn
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: PreEntrataInApertura_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: RadialiMultipli_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+          - Name: Asportatore
+            Type: BaseObjectType
+            Children:
+            - Name: FtcGestiteDaPressa_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: InsertiCaricoInizioCiclo_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: StopCicloPezzoMancante_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+          - Name: Produzione
+            Type: BaseObjectType
+            Children:
+            - Name: StopFine_En
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+            - Name: FermoRiconosci
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+          - Name: Trasduttori
+            Type: BaseObjectType
+            Children:
+            - Name: SqueezeA
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SqueezeB
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SqueezeC
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SqueezeD
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SqueezeE
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SqueezeF
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SqueezeG
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SqueezeH
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: Pompa
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: AusiliarioOlio
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: AusiliarioAzoto
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: OlioTemp
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: Spostatori
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: ChiusuraCorsa
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: ChiusuraForza
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: ChiusuraEncoder
+              Type: BaseDataVariableType
+              DataType: Float
+              Value: 0.0
+            - Name: Motore2a
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MoltiplicaAzoto
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MoltiplicaOlio
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SecondaOlio
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: SecondaAzoto
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: MotoreMoltiplica
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: Estrazione
+              Type: BaseDataVariableType
+              DataType: Int16
+              Value: 0
+            - Name: CancelloPost
+              Type: BaseDataVariableType
+              DataType: Int32
+              Value: 0
+            - Name: CancelloAnt
+              Type: BaseDataVariableType
+              DataType: Int32
+              Value: 0
+- Name: RecipeController
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Result
+    Type: BaseDataVariableType
+    DataType: Byte
+    AccessLevel: Read
+    Value: 0
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: String
+    AccessLevel: Read
+    Value: ""
+  - Name: LastAppliedRecipe
+    Type: BaseDataVariableType
+    DataType: String
+    AccessLevel: Read
+    Value: ""
+  - Name: RecipeSchema
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"a788a4fb73c2553832db1df356b6c6fc","Namespace":28}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":2,"Namespace":13}
+  - Name: CSVFile
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "file:///D:/Ricette/Sistema.csv"
+  - Name: CSVSeparator
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ";"
+  - Name: WrapFields
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Class: Method
+    Name: Delete
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"RecipeName","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Class: Method
+    Name: Export
+  - Class: Method
+    Name: Import
+  - Class: Method
+    Name: ApplyFromDB
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"RecipeName","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"ErrorPolicy","DataType":{"Id":40,"Namespace":13},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Class: Method
+    Name: ApplyFromEditModel
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"ErrorPolicy","DataType":{"Id":40,"Namespace":13},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Class: Method
+    Name: LoadFromPLC
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"ErrorPolicy","DataType":{"Id":40,"Namespace":13},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Class: Method
+    Name: SaveToDB
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"RecipeName","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"ErrorPolicy","DataType":{"Id":40,"Namespace":13},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Class: Method
+    Name: SelectFromDB
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"RecipeName","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"ErrorPolicy","DataType":{"Id":40,"Namespace":13},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: RecipeName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../OperazioniRicetteComandi/Variabili_Ricette_Sistema/NomeRicettaSistema"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: ErrorPolicy
+    Type: BaseDataVariableType
+    DataType: CopyErrorPolicy
+    Value: 0
+  - Name: ApplyFromDBTrigger
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: ApplyFromEditModelTrigger
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../OperazioniRicetteComandi/Variabili_Ricette_Sistema/CaricaRicettaSistema"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: DeleteTrigger
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../OperazioniRicetteComandi/Variabili_Ricette_Sistema/CancellaRicettaSistema"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: ExportTrigger
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../OperazioniRicetteComandi/Variabili_Ricette_Sistema/ESPORTASistema"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: ImportTrigger
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: LoadFromPLCTrigger
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../OperazioniRicetteComandi/Variabili_Ricette_Sistema/LEGGISistema"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: SaveToDBTrigger
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../OperazioniRicetteComandi/Variabili_Ricette_Sistema/SALVASistema"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: SelectFromDBTrigger
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../OperazioniRicetteComandi/Variabili_Ricette_Sistema/SelezionaRicettaSistema"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: ApplyFromDBTriggerTransitioned1
+    Type: VariableTransitionEventDispatcher
+    Children:
+    - Name: Value
+      Type: BaseVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: Transition
+      Type: BaseVariableType
+      DataType: VariableTransition
+      Value: 0
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../ApplyFromDBTrigger"
+    - Name: VariableTransitionEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":108,"Namespace":3}
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../../Stampo@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "CreateStoreRecipe"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: NewRecipeName
+              Type: BaseDataVariableType
+              DataType: String
+              Description: {"NamespaceIndex":13,"TextId":"CreateStoreRecipeNewRecipeNameDescription"}
+              Value: ""
+      - Name: EventArguments
+        Type: VariableTransitionEvent
+        Children:
+        - Name: VariableNodeId
+          Type: BaseVariableType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: NewValue
+          Type: BaseVariableType
+          DataType: BaseDataType
+        - Name: OldValue
+          Type: BaseVariableType
+          DataType: BaseDataType
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+  - Name: ApplyFromEditModelTriggerTransitioned1
+    Type: VariableTransitionEventDispatcher
+    Children:
+    - Name: Value
+      Type: BaseVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: Transition
+      Type: BaseVariableType
+      DataType: VariableTransition
+      Value: 0
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../ApplyFromEditModelTrigger"
+    - Name: VariableTransitionEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":108,"Namespace":3}
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../..@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "ApplyFromEditModel"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: ErrorPolicy
+              Type: BaseDataVariableType
+              DataType: CopyErrorPolicy
+              Value: 0
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../ErrorPolicy"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  Value: 2
+      - Name: EventArguments
+        Type: VariableTransitionEvent
+        Children:
+        - Name: VariableNodeId
+          Type: BaseVariableType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: NewValue
+          Type: BaseVariableType
+          DataType: BaseDataType
+        - Name: OldValue
+          Type: BaseVariableType
+          DataType: BaseDataType
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+  - Name: DeleteTriggerTransitioned1
+    Type: VariableTransitionEventDispatcher
+    Children:
+    - Name: Value
+      Type: BaseVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: Transition
+      Type: BaseVariableType
+      DataType: VariableTransition
+      Value: 0
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../DeleteTrigger"
+    - Name: VariableTransitionEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":108,"Namespace":3}
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../..@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Delete"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: RecipeName
+              Type: BaseDataVariableType
+              DataType: String
+              Value: ""
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../RecipeName"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  Value: 2
+      - Name: EventArguments
+        Type: VariableTransitionEvent
+        Children:
+        - Name: VariableNodeId
+          Type: BaseVariableType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: NewValue
+          Type: BaseVariableType
+          DataType: BaseDataType
+        - Name: OldValue
+          Type: BaseVariableType
+          DataType: BaseDataType
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+  - Name: ExportTriggerTransitioned1
+    Type: VariableTransitionEventDispatcher
+    Children:
+    - Name: Value
+      Type: BaseVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: Transition
+      Type: BaseVariableType
+      DataType: VariableTransition
+      Value: 0
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../ExportTrigger"
+    - Name: VariableTransitionEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":108,"Namespace":3}
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../..@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Export"
+      - Name: EventArguments
+        Type: VariableTransitionEvent
+        Children:
+        - Name: VariableNodeId
+          Type: BaseVariableType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: NewValue
+          Type: BaseVariableType
+          DataType: BaseDataType
+        - Name: OldValue
+          Type: BaseVariableType
+          DataType: BaseDataType
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+  - Name: ImportTriggerTransitioned1
+    Type: VariableTransitionEventDispatcher
+    Children:
+    - Name: Value
+      Type: BaseVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: Transition
+      Type: BaseVariableType
+      DataType: VariableTransition
+      Value: 0
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../ImportTrigger"
+    - Name: VariableTransitionEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":108,"Namespace":3}
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../..@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Import"
+      - Name: EventArguments
+        Type: VariableTransitionEvent
+        Children:
+        - Name: VariableNodeId
+          Type: BaseVariableType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: NewValue
+          Type: BaseVariableType
+          DataType: BaseDataType
+        - Name: OldValue
+          Type: BaseVariableType
+          DataType: BaseDataType
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+  - Name: LoadFromPLCTriggerTransitioned1
+    Type: VariableTransitionEventDispatcher
+    Children:
+    - Name: Value
+      Type: BaseVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: Transition
+      Type: BaseVariableType
+      DataType: VariableTransition
+      Value: 0
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../LoadFromPLCTrigger"
+    - Name: VariableTransitionEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":108,"Namespace":3}
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../..@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "LoadFromPLC"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: ErrorPolicy
+              Type: BaseDataVariableType
+              DataType: CopyErrorPolicy
+              Value: 0
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../ErrorPolicy"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  Value: 2
+      - Name: EventArguments
+        Type: VariableTransitionEvent
+        Children:
+        - Name: VariableNodeId
+          Type: BaseVariableType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: NewValue
+          Type: BaseVariableType
+          DataType: BaseDataType
+        - Name: OldValue
+          Type: BaseVariableType
+          DataType: BaseDataType
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+  - Name: SaveToDBTriggerTransitioned1
+    Type: VariableTransitionEventDispatcher
+    Children:
+    - Name: Value
+      Type: BaseVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: Transition
+      Type: BaseVariableType
+      DataType: VariableTransition
+      Value: 0
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../SaveToDBTrigger"
+    - Name: VariableTransitionEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":108,"Namespace":3}
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../..@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "SaveToDB"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: RecipeName
+              Type: BaseDataVariableType
+              DataType: String
+              Value: ""
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../RecipeName"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  Value: 2
+            - Name: ErrorPolicy
+              Type: BaseDataVariableType
+              DataType: CopyErrorPolicy
+              Value: 0
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../ErrorPolicy"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  Value: 2
+      - Name: EventArguments
+        Type: VariableTransitionEvent
+        Children:
+        - Name: VariableNodeId
+          Type: BaseVariableType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: NewValue
+          Type: BaseVariableType
+          DataType: BaseDataType
+        - Name: OldValue
+          Type: BaseVariableType
+          DataType: BaseDataType
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+  - Name: SelectFromDBTriggerTransitioned1
+    Type: VariableTransitionEventDispatcher
+    Children:
+    - Name: Value
+      Type: BaseVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: Transition
+      Type: BaseVariableType
+      DataType: VariableTransition
+      Value: 0
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../SelectFromDBTrigger"
+    - Name: VariableTransitionEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":108,"Namespace":3}
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../..@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "SelectFromDB"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: RecipeName
+              Type: BaseDataVariableType
+              DataType: String
+              Value: ""
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../RecipeName"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  Value: 2
+            - Name: ErrorPolicy
+              Type: BaseDataVariableType
+              DataType: CopyErrorPolicy
+              Value: 0
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../ErrorPolicy"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  Value: 2
+      - Name: EventArguments
+        Type: VariableTransitionEvent
+        Children:
+        - Name: VariableNodeId
+          Type: BaseVariableType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: NewValue
+          Type: BaseVariableType
+          DataType: BaseDataType
+        - Name: OldValue
+          Type: BaseVariableType
+          DataType: BaseDataType
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0

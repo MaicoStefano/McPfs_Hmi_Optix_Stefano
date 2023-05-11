@@ -1,0 +1,24 @@
+Name: Livelli Maico
+Id: g=18a5d479196bc706cd08f388ac47408a
+Type: FolderType
+Children:
+- Name: Operatore
+  Type: BaseDataVariableType
+  DataType: Byte
+  Value: 1
+- Name: Manutenzione
+  Type: BaseDataVariableType
+  DataType: Byte
+  Value: 3
+- Name: Produzione
+  Type: BaseDataVariableType
+  DataType: Byte
+  Value: 5
+- Name: Amministratore
+  Type: BaseDataVariableType
+  DataType: Byte
+  Value: 7
+- Name: Maico
+  Type: BaseDataVariableType
+  DataType: Byte
+  Value: 8

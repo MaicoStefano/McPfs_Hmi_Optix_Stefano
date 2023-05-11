@@ -1,0 +1,43 @@
+<svg version="1.2" baseProfile="tiny" id="EdgeSVG_76DVz" x="0px" y="0px" width="22.221px" height="34.177px" viewBox="0 0 22.221 34.177" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <linearGradient id="SVGID_12_" gradientUnits="userSpaceOnUse" x1="11.1104" y1="1" x2="11.1104" y2="5.6191">
+    <stop offset="0" style="stop-color:#FFFFFF;stop-opacity:0.1"/>
+    <stop offset="0.0181" style="stop-color:#FFFFFF;stop-opacity:0.35"/>
+    <stop offset="0.0237" style="stop-color:#FFFFFF;stop-opacity:0.3351"/>
+    <stop offset="0.1493" style="stop-color:#FFFFFF;stop-opacity:0"/>
+    <stop offset="0.5928" style="stop-color:#FFFFFF;stop-opacity:0"/>
+    <stop offset="0.7481" style="stop-color:#FFFFFF;stop-opacity:0.15"/>
+    <stop offset="0.7784" style="stop-color:#FCFCFC;stop-opacity:0.1254"/>
+    <stop offset="0.8024" style="stop-color:#F2F2F2;stop-opacity:0.1057"/>
+    <stop offset="0.8243" style="stop-color:#E1E1E1;stop-opacity:0.0879"/>
+    <stop offset="0.845" style="stop-color:#C9C9C9;stop-opacity:0.071"/>
+    <stop offset="0.8648" style="stop-color:#ABABAB;stop-opacity:0.0549"/>
+    <stop offset="0.8839" style="stop-color:#858585;stop-opacity:0.0393"/>
+    <stop offset="0.9025" style="stop-color:#595959;stop-opacity:0.0242"/>
+    <stop offset="0.9202" style="stop-color:#262626;stop-opacity:0.0097"/>
+    <stop offset="0.9321" style="stop-color:#000000;stop-opacity:0"/>
+    <stop offset="1" style="stop-color:#000000;stop-opacity:0.35"/>
+  </linearGradient>
+  <path fill="url(#SVGID_12_)" d="M11.11,5.619h9.507c0,0,0.131,0,0.263,0c0.131,0,0.21,0,0.21-0.131&#xD;&#xA;&#x9;&#x9;c0-0.131-0.158-0.184-0.158-0.446c0-0.263,0-3.412,0-3.674C20.932,1.105,20.827,1,20.407,1S11.11,1,11.11,1S2.233,1,1.813,1&#xD;&#xA;&#x9;&#x9;S1.289,1.105,1.289,1.368c0,0.262,0,3.412,0,3.674c0,0.262-0.158,0.315-0.158,0.446c0,0.131,0.079,0.131,0.21,0.131&#xD;&#xA;&#x9;&#x9;c0.132,0,0.263,0,0.263,0H11.11z"/>
+  <linearGradient id="SVGID_13_" gradientUnits="userSpaceOnUse" x1="1.1309" y1="3.3096" x2="21.0898" y2="3.3096">
+    <stop offset="0" style="stop-color:#000000;stop-opacity:0.2"/>
+    <stop offset="0.0078" style="stop-color:#080808;stop-opacity:0.2"/>
+    <stop offset="0.0669" style="stop-color:#414141;stop-opacity:0.2"/>
+    <stop offset="0.1277" style="stop-color:#747474;stop-opacity:0.2"/>
+    <stop offset="0.1889" style="stop-color:#9F9F9F;stop-opacity:0.2"/>
+    <stop offset="0.2504" style="stop-color:#C1C1C1;stop-opacity:0.2"/>
+    <stop offset="0.3125" style="stop-color:#DCDCDC;stop-opacity:0.2"/>
+    <stop offset="0.3754" style="stop-color:#F0F0F0;stop-opacity:0.2"/>
+    <stop offset="0.4395" style="stop-color:#FBFBFB;stop-opacity:0.2"/>
+    <stop offset="0.5068" style="stop-color:#FFFFFF;stop-opacity:0.2"/>
+    <stop offset="0.5897" style="stop-color:#FCFCFC;stop-opacity:0.2"/>
+    <stop offset="0.6543" style="stop-color:#F2F2F2;stop-opacity:0.2"/>
+    <stop offset="0.7129" style="stop-color:#E1E1E1;stop-opacity:0.2"/>
+    <stop offset="0.7678" style="stop-color:#CACACA;stop-opacity:0.2"/>
+    <stop offset="0.8202" style="stop-color:#ACACAC;stop-opacity:0.2"/>
+    <stop offset="0.8707" style="stop-color:#878787;stop-opacity:0.2"/>
+    <stop offset="0.9197" style="stop-color:#5B5B5B;stop-opacity:0.2"/>
+    <stop offset="0.9663" style="stop-color:#292929;stop-opacity:0.2"/>
+    <stop offset="1" style="stop-color:#000000;stop-opacity:0.2"/>
+  </linearGradient>
+  <path fill="url(#SVGID_13_)" d="M11.11,5.619h9.507c0,0,0.131,0,0.263,0c0.131,0,0.21,0,0.21-0.131&#xD;&#xA;&#x9;&#x9;c0-0.131-0.158-0.184-0.158-0.446c0-0.263,0-3.412,0-3.674C20.932,1.105,20.827,1,20.407,1S11.11,1,11.11,1S2.233,1,1.813,1&#xD;&#xA;&#x9;&#x9;S1.289,1.105,1.289,1.368c0,0.262,0,3.412,0,3.674c0,0.262-0.158,0.315-0.158,0.446c0,0.131,0.079,0.131,0.21,0.131&#xD;&#xA;&#x9;&#x9;c0.132,0,0.263,0,0.263,0H11.11z"/>
+</svg>

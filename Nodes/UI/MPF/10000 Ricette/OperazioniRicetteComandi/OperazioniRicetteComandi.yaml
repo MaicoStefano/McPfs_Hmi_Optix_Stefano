@@ -1,0 +1,8 @@
+Name: OperazioniRicetteComandi
+Type: FolderType
+Children:
+- File: Variabili_Ricette_Stampo/Variabili_Ricette_Stampo.yaml
+- File: Variabili_Ricette_Sistema/Variabili_Ricette_Sistema.yaml
+- File: Variabili_Ricette_SetUp/Variabili_Ricette_SetUp.yaml
+- File: Variabili_Ricette_Livelli/Variabili_Ricette_Livelli.yaml
+- File: Variabili_Ricette_NomiStampo/Variabili_Ricette_NomiStampo.yaml

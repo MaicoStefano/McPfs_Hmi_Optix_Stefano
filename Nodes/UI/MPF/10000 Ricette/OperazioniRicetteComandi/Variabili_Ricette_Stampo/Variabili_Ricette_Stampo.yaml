@@ -1,0 +1,47 @@
+Name: Variabili_Ricette_Stampo
+Type: FolderType
+Children:
+- Name: OperazioniRicetteNomiStampoSalva
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: OperazioniRicetteNomiStampoCarica
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: OperazioniRicetteNomiStampoEsporta
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: OperazioniRicetteNomiStampoImporta
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: LEGGIStampo
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: SALVAStampo
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: ESPORTAStampo
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: CaricaRicettaStampo
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: SelezionaRicettaStampo
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: CancellaRicettaStampo
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: NomeRicettaStampo
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"

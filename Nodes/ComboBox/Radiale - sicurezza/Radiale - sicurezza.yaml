@@ -1,0 +1,20 @@
+Name: 'Radiale - sicurezza'
+Id: g=a72fbe06ca2cd2252cd3748c237f87a0
+Type: FolderType
+Children:
+- Name: FC
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+- Name: T
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 1
+- Name: FC + T
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 2
+- Name: FC + R
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 3

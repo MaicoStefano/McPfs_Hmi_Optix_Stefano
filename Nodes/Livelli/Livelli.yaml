@@ -1,0 +1,81 @@
+Name: Livelli
+Type: FolderType
+Children:
+- Name: LivelliON
+  Id: g=1ae5cbb6fd720813ec3374bc8cfb520c
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Livelli
+  Id: g=924567701746d31d139d1dc686ce1e04
+  Type: BaseObjectType
+  Children:
+  - Name: Variabile1
+    Id: g=4ab845c44d82a922d3afd74934c0fa8e
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Variabile2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Variabile3
+    Id: g=59f250e2abc801d132d32645d20a9b7f
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Variabile4
+    Id: g=031d87c90060eaec6046f1cd6cc9c264
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: NomeVariabile
+  Type: BaseDataVariableType
+  DataType: String
+  Value: ""
+- Name: ValoreLivello
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+- Name: SelectLivelli
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "SELECT * FROM \"LogLivelli\""
+- Name: LivelliSQL
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: Avanti_Vel1
+    Id: g=8b423e6fccc984c4c321a2a3cc811236
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 0
+  - Name: Avanti_Vel2
+    Id: g=0e10a82c4993729254b446b396caa0bf
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 0
+- Name: prova
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: test
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+  - Name: test 1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 2
+- Name: array
+  Type: BaseDataVariableType
+  DataType: Boolean
+  ValueRank: OneDimension
+  ArrayDimensions: [8]
+  Value: [false,false,false,false,false,false,false,false]
+- Name: LivelloProva
+  Type: BaseDataVariableType
+  DataType: UInt32
+  Value: 0

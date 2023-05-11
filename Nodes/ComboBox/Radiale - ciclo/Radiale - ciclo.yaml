@@ -1,0 +1,56 @@
+Name: 'Radiale - ciclo'
+Id: g=f15f0a9ba653206686adfadd7ae5ff42
+Type: FolderType
+Children:
+- Name: Non programmata
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+- Name: Standard piano mobile
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 1
+- Name: Standard piano fisso
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 2
+- Name: In chiusura
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 3
+- Name: In chiusura + stop
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 4
+- Name: In apertura
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 5
+- Name: In apertura + stop
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 6
+- Name: Estrazione avanti
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 7
+- Name: Estrazione indietro
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 8
+- Name: Start su 2a fase
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 9
+- Name: Dopo apertura
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 10
+- Name: 'Pre-estrazione avanti'
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 11
+- Name: 'Pre-estrazione indietro'
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 12

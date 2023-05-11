@@ -1,0 +1,13 @@
+Name: MPF
+Type: FolderType
+Children:
+- File: 00200 Chiusura/00200 Chiusura.yaml
+- File: 00300 Estrazione/00300 Estrazione.yaml
+- File: 00400 Iniezione/00400 Iniezione.yaml
+- File: 00500 Moltiplica/00500 Moltiplica.yaml
+- File: 00600 Radiali/00600 Radiali.yaml
+- File: 00700 Squeeze/00700 Squeeze.yaml
+- File: 00800 Pompa/00800 Pompa.yaml
+- File: 00900 Cancelli/00900 Cancelli.yaml
+- File: 01000 Accessori/01000 Accessori.yaml
+- File: 10000 Ricette/10000 Ricette.yaml
